@@ -1,0 +1,68 @@
+{
+  "transcript_id": "ui_20260602T153258103870",
+  "version": "v3",
+  "artifact_version": "v3+p40391d24ebf7+t509c67d9e941",
+  "prompt_hash": "40391d24ebf7229291c5ee77c78310aa44af38d5f371af8fa97c1e9c511d0d94",
+  "tools_hash": "509c67d9e94185f4cfa7c9a997e48c75988c7d1a18351f656d3ebbc9ca47445d",
+  "provider": "openrouter",
+  "model": null,
+  "created_at": "20260602T153258103870",
+  "updated_at": "2026-06-02T15:33:02",
+  "source": "streamlit_ui",
+  "turns": [
+    {
+      "turn_index": 1,
+      "started_at": "2026-06-02T15:33:02",
+      "user": "Dang ban tin nay len Telegram giup minh",
+      "assistant_text": "Vui lòng xác nhận bạn có muốn gửi tin nhắn này lên Telegram không?",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "clarify",
+              "args": {
+                "question": "Vui lòng xác nhận bạn có muốn gửi tin nhắn này lên Telegram không?",
+                "response_type": "yes_no"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "clarify",
+              "args": {
+                "question": "Vui lòng xác nhận bạn có muốn gửi tin nhắn này lên Telegram không?",
+                "response_type": "yes_no"
+              },
+              "result": {
+                "tool": "ask_user",
+                "question": "Vui lòng xác nhận bạn có muốn gửi tin nhắn này lên Telegram không?",
+                "response_type": "yes_no",
+                "options": [],
+                "awaiting_user": true
+              }
+            }
+          ]
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "clarify",
+          "args": {
+            "question": "Vui lòng xác nhận bạn có muốn gửi tin nhắn này lên Telegram không?",
+            "response_type": "yes_no"
+          },
+          "result": {
+            "tool": "ask_user",
+            "question": "Vui lòng xác nhận bạn có muốn gửi tin nhắn này lên Telegram không?",
+            "response_type": "yes_no",
+            "options": [],
+            "awaiting_user": true
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T15:33:02"
+    }
+  ]
+}
