@@ -5,7 +5,7 @@ from typing import Any
 
 import requests
 
-from tools._shared import TIMEOUT, err
+from tools._shared import TIMEOUT, clamp_int, err, require_text
 
 
 def _twitter_get(path: str, params: dict[str, Any]) -> dict[str, Any]:
@@ -45,8 +45,11 @@ def _tweets_from(data: dict[str, Any], limit: int) -> list[dict[str, Any]]:
 
 def search_tweets(query: str = "", search_type: str = "Latest", limit: int = 5) -> dict[str, Any]:
     try:
+        query = require_text(query, "query")
+        search_type = search_type if search_type in {"Latest", "Top"} else "Latest"
+        limit = clamp_int(limit, default=5, minimum=1, maximum=20)
         data = _twitter_get("/search.php", {"query": query, "search_type": search_type})
-        return {"tool": "search_tweets", "query": query, "search_type": search_type, "items": _tweets_from(data, limit)}
+        return {"tool": "search_tweets", "query": query, "search_type": search_type, "limit": limit, "items": _tweets_from(data, limit)}
     except Exception as exc:
         return err("search_tweets", exc)
 
