@@ -2,7 +2,7 @@
 
 ## Team
 
-- Team: hhd / vdk / tma
+- Team: zone 9 team 4
 - Members: hhd, vdk, tma
 - Provider/model used in recorded runs: OpenRouter / openai/gpt-4o-mini
 
