@@ -1,0 +1,128 @@
+{
+  "transcript_id": "ui_20260602T155806513275",
+  "version": "v3",
+  "artifact_version": "v3+p95d4db661bc9+teab2aaf758cd",
+  "prompt_hash": "95d4db661bc93c274296cd41bfe2fc5be09e0213fea427dd7e9938766c1ab4d9",
+  "tools_hash": "eab2aaf758cd69a1bd8b86f130902b5e1ed9df88596d864a4036e6074c01be0d",
+  "provider": "openrouter",
+  "model": null,
+  "created_at": "20260602T155806513275",
+  "updated_at": "2026-06-02T15:58:28",
+  "source": "streamlit_ui",
+  "turns": [
+    {
+      "turn_index": 1,
+      "started_at": "2026-06-02T15:58:12",
+      "user": "Dang ban tin nay len Telegram giup minh",
+      "assistant_text": "Vui lòng xác nhận nội dung bạn muốn gửi lên Telegram?",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "clarify",
+              "args": {
+                "question": "Vui lòng xác nhận nội dung bạn muốn gửi lên Telegram?",
+                "response_type": "text"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "clarify",
+              "args": {
+                "question": "Vui lòng xác nhận nội dung bạn muốn gửi lên Telegram?",
+                "response_type": "text"
+              },
+              "result": {
+                "tool": "ask_user",
+                "question": "Vui lòng xác nhận nội dung bạn muốn gửi lên Telegram?",
+                "response_type": "text",
+                "options": [],
+                "awaiting_user": true
+              }
+            }
+          ]
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "clarify",
+          "args": {
+            "question": "Vui lòng xác nhận nội dung bạn muốn gửi lên Telegram?",
+            "response_type": "text"
+          },
+          "result": {
+            "tool": "ask_user",
+            "question": "Vui lòng xác nhận nội dung bạn muốn gửi lên Telegram?",
+            "response_type": "text",
+            "options": [],
+            "awaiting_user": true
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T15:58:12"
+    },
+    {
+      "turn_index": 2,
+      "started_at": "2026-06-02T15:58:28",
+      "user": "hello các bạn",
+      "assistant_text": "Có vẻ như Telegram chưa được cấu hình để gửi tin nhắn. Bạn cần thiết lập `TELEGRAM_BOT_TOKEN` và `TELEGRAM_CHAT_ID` trong tệp `.env`, sau đó khởi động lại ứng dụng. Nếu bạn cần thêm trợ giúp, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "send",
+              "args": {
+                "text": "hello các bạn",
+                "confirmed": true
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "send",
+              "args": {
+                "text": "hello các bạn",
+                "confirmed": true
+              },
+              "result": {
+                "tool": "send_telegram",
+                "status": "not_configured",
+                "message": "Telegram is not configured. Set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID in .env, then restart the app.",
+                "sent": false,
+                "confirmed": true
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Có vẻ như Telegram chưa được cấu hình để gửi tin nhắn. Bạn cần thiết lập `TELEGRAM_BOT_TOKEN` và `TELEGRAM_CHAT_ID` trong tệp `.env`, sau đó khởi động lại ứng dụng. Nếu bạn cần thêm trợ giúp, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "send",
+          "args": {
+            "text": "hello các bạn",
+            "confirmed": true
+          },
+          "result": {
+            "tool": "send_telegram",
+            "status": "not_configured",
+            "message": "Telegram is not configured. Set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID in .env, then restart the app.",
+            "sent": false,
+            "confirmed": true
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T15:58:28"
+    }
+  ]
+}

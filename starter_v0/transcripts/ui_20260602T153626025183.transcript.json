@@ -1,0 +1,580 @@
+{
+  "transcript_id": "ui_20260602T153626025183",
+  "version": "v3",
+  "artifact_version": "v3+p40391d24ebf7+t509c67d9e941",
+  "prompt_hash": "40391d24ebf7229291c5ee77c78310aa44af38d5f371af8fa97c1e9c511d0d94",
+  "tools_hash": "509c67d9e94185f4cfa7c9a997e48c75988c7d1a18351f656d3ebbc9ca47445d",
+  "provider": "openrouter",
+  "model": null,
+  "created_at": "20260602T153626025183",
+  "updated_at": "2026-06-02T15:39:59",
+  "source": "streamlit_ui",
+  "turns": [
+    {
+      "turn_index": 1,
+      "started_at": "2026-06-02T15:36:37",
+      "user": "Tweet moi nhat cua Sam Altman la gi?",
+      "assistant_text": "Tweet mới nhất của Sam Altman là:\n\n\"The OpenAI Foundation is doing a lot of wonderful things. Helping society become resilient to AI is going to be incredibly important. Much more to come here!\" \n\nBạn có thể xem tweet tại đây: [Link đến tweet](https://x.com/sama/status/2061562575322492937). \n\nTweet này đã nhận được 1699 lượt thích và 138 lượt retweet.",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "timeline",
+              "args": {
+                "screenname": "sama",
+                "limit": 1
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "timeline",
+              "args": {
+                "screenname": "sama",
+                "limit": 1
+              },
+              "result": {
+                "tool": "get_user_tweets",
+                "screenname": "sama",
+                "items": [
+                  {
+                    "title": "The OpenAI Foundation is doing a lot of wonderful things.",
+                    "summary": "The OpenAI Foundation is doing a lot of wonderful things.\n\nHelping society become resilient to AI is going to be incredibly important. Much more to come here!",
+                    "url": "https://x.com/sama/status/2061562575322492937",
+                    "source": "@sama",
+                    "date": "Mon Jun 01 21:36:34 +0000 2026",
+                    "metrics": {
+                      "favorites": 1699,
+                      "retweets": 138,
+                      "views": "244596"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Tweet mới nhất của Sam Altman là:\n\n\"The OpenAI Foundation is doing a lot of wonderful things. Helping society become resilient to AI is going to be incredibly important. Much more to come here!\" \n\nBạn có thể xem tweet tại đây: [Link đến tweet](https://x.com/sama/status/2061562575322492937). \n\nTweet này đã nhận được 1699 lượt thích và 138 lượt retweet.",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "timeline",
+          "args": {
+            "screenname": "sama",
+            "limit": 1
+          },
+          "result": {
+            "tool": "get_user_tweets",
+            "screenname": "sama",
+            "items": [
+              {
+                "title": "The OpenAI Foundation is doing a lot of wonderful things.",
+                "summary": "The OpenAI Foundation is doing a lot of wonderful things.\n\nHelping society become resilient to AI is going to be incredibly important. Much more to come here!",
+                "url": "https://x.com/sama/status/2061562575322492937",
+                "source": "@sama",
+                "date": "Mon Jun 01 21:36:34 +0000 2026",
+                "metrics": {
+                  "favorites": 1699,
+                  "retweets": 138,
+                  "views": "244596"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T15:36:37"
+    },
+    {
+      "turn_index": 2,
+      "started_at": "2026-06-02T15:38:21",
+      "user": "Tom tat 5 tweet moi nhat giup minh",
+      "assistant_text": "Dưới đây là tóm tắt 5 tweet mới nhất của Sam Altman:\n\n1. **[The OpenAI Foundation is doing a lot of wonderful things.](https://x.com/sama/status/2061562575322492937)**  \n   - Tóm tắt: OpenAI Foundation đang thực hiện nhiều điều tuyệt vời. Họ đang giúp xã hội trở nên kiên cường hơn với AI, điều này sẽ rất quan trọng trong tương lai.  \n   - Ngày: 1 tháng 6, 2026  \n   - Lượt thích: 1701, Retweet: 138\n\n2. **[OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us program and manufacture robots that are useful for society.](https://x.com/sama/status/2061117302528188712)**  \n   - Tóm tắt: OpenAI Robotics đang tuyển dụng các kỹ sư xuất sắc để giúp lập trình và sản xuất robot hữu ích cho xã hội. Họ đang tập trung vào việc hỗ trợ công nhân có tay nghề trong việc xây dựng cơ sở hạ tầng tương lai.  \n   - Ngày: 31 tháng 5, 2026  \n   - Lượt thích: 12950, Retweet: 1025\n\n3. **[We want to help the world get a head start on biodefense:](https://x.com/sama/status/2061101875303530871)**  \n   - Tóm tắt: Sam Altman chia sẻ mong muốn giúp thế giới có khởi đầu tốt hơn trong lĩnh vực phòng thủ sinh học.  \n   - Ngày: 31 tháng 5, 2026  \n   - Lượt thích: 1540, Retweet: 175\n\n4. **[RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.](https://x.com/sama/status/2061097558819356732)**  \n   - Tóm tắt: Sam Altman retweet một thông điệp về việc năm triệu người dùng sẽ đồng ý và sẽ thiết lập lại giới hạn vào sáng mai để kỷ niệm.  \n   - Ngày: 31 tháng 5, 2026  \n   - Lượt thích: 0, Retweet: 378\n\n5. **[AI should dramatically increase quality of life and individual freedoms for people around the world.](https://x.com/sama/status/2059677202917331431)**  \n   - Tóm tắt: Sam Altman nhấn mạnh rằng AI nên tăng cường chất lượng cuộc sống và tự do cá nhân cho mọi người trên toàn thế giới. OpenAI Foundation cam kết 250 triệu đô la cho các biện pháp hỗ trợ và phát triển sự thịnh vượng chung.  \n   - Ngày: 27 tháng 5, 2026  \n   - Lượt thích: 4360, Retweet: 403\n\nNếu bạn cần thêm thông tin, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "timeline",
+              "args": {
+                "screenname": "sama",
+                "limit": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "timeline",
+              "args": {
+                "screenname": "sama",
+                "limit": 5
+              },
+              "result": {
+                "tool": "get_user_tweets",
+                "screenname": "sama",
+                "items": [
+                  {
+                    "title": "The OpenAI Foundation is doing a lot of wonderful things.",
+                    "summary": "The OpenAI Foundation is doing a lot of wonderful things.\n\nHelping society become resilient to AI is going to be incredibly important. Much more to come here!",
+                    "url": "https://x.com/sama/status/2061562575322492937",
+                    "source": "@sama",
+                    "date": "Mon Jun 01 21:36:34 +0000 2026",
+                    "metrics": {
+                      "favorites": 1701,
+                      "retweets": 138,
+                      "views": "244810"
+                    }
+                  },
+                  {
+                    "title": "OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us progra",
+                    "summary": "OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us program and manufacture robots that are useful for society.\n\nAI should be able to help people in the physical world. In the short term, we are focused on robots to support skilled workers to build our future infrastructure; in the long term, we imagine everyone having a personal robot doing anything they need.\n\nOur world simulation research program, led by Aditya Ramesh (@model_mechanic), has evolved over the past year into OpenAI Robotics. Progress is rapid, and based on a foundation of co-design between robotics hardware and ML research.\n\nIf you love working hands-on across the robotics stack and want to build the future, please consider joining us. Send an email with your background and evidence of exceptional accomplishment to: robotics-recruiting@openai.com",
+                    "url": "https://x.com/sama/status/2061117302528188712",
+                    "source": "@sama",
+                    "date": "Sun May 31 16:07:13 +0000 2026",
+                    "metrics": {
+                      "favorites": 12950,
+                      "retweets": 1025,
+                      "views": "2757022"
+                    }
+                  },
+                  {
+                    "title": "We want to help the world get a head start on biodefense:",
+                    "summary": "We want to help the world get a head start on biodefense:\n\nhttps://t.co/gDQfOZrLA4",
+                    "url": "https://x.com/sama/status/2061101875303530871",
+                    "source": "@sama",
+                    "date": "Sun May 31 15:05:55 +0000 2026",
+                    "metrics": {
+                      "favorites": 1540,
+                      "retweets": 175,
+                      "views": "239536"
+                    }
+                  },
+                  {
+                    "title": "RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.",
+                    "summary": "RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.\n\nTime to go /fast",
+                    "url": "https://x.com/sama/status/2061097558819356732",
+                    "source": "@sama",
+                    "date": "Sun May 31 14:48:46 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 378,
+                      "views": "33"
+                    }
+                  },
+                  {
+                    "title": "AI should dramatically increase quality of life and individual freedoms for people around the world.",
+                    "summary": "AI should dramatically increase quality of life and individual freedoms for people around the world.\n\nThe OpenAI Foundation is making an initial $250M commitment to measurement, transition support, and new approaches to broadly shared prosperity.\n\nhttps://t.co/zOD8O94RjQ",
+                    "url": "https://x.com/sama/status/2059677202917331431",
+                    "source": "@sama",
+                    "date": "Wed May 27 16:44:46 +0000 2026",
+                    "metrics": {
+                      "favorites": 4360,
+                      "retweets": 403,
+                      "views": "487352"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Dưới đây là tóm tắt 5 tweet mới nhất của Sam Altman:\n\n1. **[The OpenAI Foundation is doing a lot of wonderful things.](https://x.com/sama/status/2061562575322492937)**  \n   - Tóm tắt: OpenAI Foundation đang thực hiện nhiều điều tuyệt vời. Họ đang giúp xã hội trở nên kiên cường hơn với AI, điều này sẽ rất quan trọng trong tương lai.  \n   - Ngày: 1 tháng 6, 2026  \n   - Lượt thích: 1701, Retweet: 138\n\n2. **[OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us program and manufacture robots that are useful for society.](https://x.com/sama/status/2061117302528188712)**  \n   - Tóm tắt: OpenAI Robotics đang tuyển dụng các kỹ sư xuất sắc để giúp lập trình và sản xuất robot hữu ích cho xã hội. Họ đang tập trung vào việc hỗ trợ công nhân có tay nghề trong việc xây dựng cơ sở hạ tầng tương lai.  \n   - Ngày: 31 tháng 5, 2026  \n   - Lượt thích: 12950, Retweet: 1025\n\n3. **[We want to help the world get a head start on biodefense:](https://x.com/sama/status/2061101875303530871)**  \n   - Tóm tắt: Sam Altman chia sẻ mong muốn giúp thế giới có khởi đầu tốt hơn trong lĩnh vực phòng thủ sinh học.  \n   - Ngày: 31 tháng 5, 2026  \n   - Lượt thích: 1540, Retweet: 175\n\n4. **[RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.](https://x.com/sama/status/2061097558819356732)**  \n   - Tóm tắt: Sam Altman retweet một thông điệp về việc năm triệu người dùng sẽ đồng ý và sẽ thiết lập lại giới hạn vào sáng mai để kỷ niệm.  \n   - Ngày: 31 tháng 5, 2026  \n   - Lượt thích: 0, Retweet: 378\n\n5. **[AI should dramatically increase quality of life and individual freedoms for people around the world.](https://x.com/sama/status/2059677202917331431)**  \n   - Tóm tắt: Sam Altman nhấn mạnh rằng AI nên tăng cường chất lượng cuộc sống và tự do cá nhân cho mọi người trên toàn thế giới. OpenAI Foundation cam kết 250 triệu đô la cho các biện pháp hỗ trợ và phát triển sự thịnh vượng chung.  \n   - Ngày: 27 tháng 5, 2026  \n   - Lượt thích: 4360, Retweet: 403\n\nNếu bạn cần thêm thông tin, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "timeline",
+          "args": {
+            "screenname": "sama",
+            "limit": 5
+          },
+          "result": {
+            "tool": "get_user_tweets",
+            "screenname": "sama",
+            "items": [
+              {
+                "title": "The OpenAI Foundation is doing a lot of wonderful things.",
+                "summary": "The OpenAI Foundation is doing a lot of wonderful things.\n\nHelping society become resilient to AI is going to be incredibly important. Much more to come here!",
+                "url": "https://x.com/sama/status/2061562575322492937",
+                "source": "@sama",
+                "date": "Mon Jun 01 21:36:34 +0000 2026",
+                "metrics": {
+                  "favorites": 1701,
+                  "retweets": 138,
+                  "views": "244810"
+                }
+              },
+              {
+                "title": "OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us progra",
+                "summary": "OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us program and manufacture robots that are useful for society.\n\nAI should be able to help people in the physical world. In the short term, we are focused on robots to support skilled workers to build our future infrastructure; in the long term, we imagine everyone having a personal robot doing anything they need.\n\nOur world simulation research program, led by Aditya Ramesh (@model_mechanic), has evolved over the past year into OpenAI Robotics. Progress is rapid, and based on a foundation of co-design between robotics hardware and ML research.\n\nIf you love working hands-on across the robotics stack and want to build the future, please consider joining us. Send an email with your background and evidence of exceptional accomplishment to: robotics-recruiting@openai.com",
+                "url": "https://x.com/sama/status/2061117302528188712",
+                "source": "@sama",
+                "date": "Sun May 31 16:07:13 +0000 2026",
+                "metrics": {
+                  "favorites": 12950,
+                  "retweets": 1025,
+                  "views": "2757022"
+                }
+              },
+              {
+                "title": "We want to help the world get a head start on biodefense:",
+                "summary": "We want to help the world get a head start on biodefense:\n\nhttps://t.co/gDQfOZrLA4",
+                "url": "https://x.com/sama/status/2061101875303530871",
+                "source": "@sama",
+                "date": "Sun May 31 15:05:55 +0000 2026",
+                "metrics": {
+                  "favorites": 1540,
+                  "retweets": 175,
+                  "views": "239536"
+                }
+              },
+              {
+                "title": "RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.",
+                "summary": "RT @thsottiaux: Five million users would agree. Resetting the limits tomorrow morning to celebrate.\n\nTime to go /fast",
+                "url": "https://x.com/sama/status/2061097558819356732",
+                "source": "@sama",
+                "date": "Sun May 31 14:48:46 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 378,
+                  "views": "33"
+                }
+              },
+              {
+                "title": "AI should dramatically increase quality of life and individual freedoms for people around the world.",
+                "summary": "AI should dramatically increase quality of life and individual freedoms for people around the world.\n\nThe OpenAI Foundation is making an initial $250M commitment to measurement, transition support, and new approaches to broadly shared prosperity.\n\nhttps://t.co/zOD8O94RjQ",
+                "url": "https://x.com/sama/status/2059677202917331431",
+                "source": "@sama",
+                "date": "Wed May 27 16:44:46 +0000 2026",
+                "metrics": {
+                  "favorites": 4360,
+                  "retweets": 403,
+                  "views": "487352"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T15:38:21"
+    },
+    {
+      "turn_index": 3,
+      "started_at": "2026-06-02T15:38:31",
+      "user": "tôi tên là gì",
+      "assistant_text": "Tôi không có thông tin về tên của bạn. Nếu bạn muốn chia sẻ tên của mình hoặc có câu hỏi khác, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Tôi không có thông tin về tên của bạn. Nếu bạn muốn chia sẻ tên của mình hoặc có câu hỏi khác, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [],
+      "ended_at": "2026-06-02T15:38:31"
+    },
+    {
+      "turn_index": 4,
+      "started_at": "2026-06-02T15:39:59",
+      "user": "Tìm tin AI hôm nay trên web, đồng thời xem mọi người đang nói gì về AI trên Twitter.",
+      "assistant_text": "Dưới đây là tin tức về AI hôm nay và những gì mọi người đang nói trên Twitter:\n\n### Tin tức về AI\n1. **[AI expected to drive £18bn of UK digital ad spend by 2030 - Marketing Week](https://www.marketingweek.com/iab-uk-ai-ad-spend/)**\n   - Tóm tắt: Dự báo AI sẽ thúc đẩy 18 tỷ bảng Anh chi tiêu quảng cáo kỹ thuật số tại Vương quốc Anh vào năm 2030. IAB UK cho biết AI sẽ chiếm một phần ba chi tiêu quảng cáo kỹ thuật số của Vương quốc Anh.\n   \n2. **[40% of executives thought AI could save up to 20%. It didn’t deliver. - PitchBook](https://pitchbook.com/news/articles/40-of-executives-thought-ai-could-save-up-to-20-it-didnt-deliver)**\n   - Tóm tắt: Một báo cáo từ Bain cho thấy khoảng cách giữa chi tiêu cho AI và lợi ích năng suất đang khiến các giám đốc điều hành lo lắng. 40% công ty ghi nhận tiết kiệm chi phí dưới 10% từ các sáng kiến AI.\n\n3. **[AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan - The Washington Post](https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/)**\n   - Tóm tắt: Một chiến dịch quảng cáo AI đã chỉ trích đại diện Lori Trahan, cho rằng bà đang đứng về phía các \"oligarch\" AI trong các nỗ lực lập pháp của mình.\n\n4. **[AI Savings Misses ‘Should Be Making Executives Uncomfortable,’ Bain Says - Insurance Journal](https://www.insurancejournal.com/news/national/2026/06/01/871951.htm)**\n   - Tóm tắt: Báo cáo từ Bain cho biết các mục tiêu tiết kiệm từ AI không đạt được có thể khiến các giám đốc điều hành cảm thấy không thoải mái, đặc biệt khi họ đang phê duyệt tăng chi tiêu cho AI.\n\n5. **[New Report: The AI Rebuild of Travel - Skift](https://skift.com/insights/the-ai-rebuild-of-travel/)**\n   - Tóm tắt: Công nghệ du lịch đang được xây dựng lại khi AI bắt đầu định hình cách thức khám phá, đặt chỗ và quản lý chuyến đi.\n\n### Những gì mọi người đang nói về AI trên Twitter\n1. **[@YNY_1985](https://x.com/YNY_1985/status/2061729458403561680)**: \"GeminiのAI ProでYoutube Premiumが追加されて、冗長ですって言われて、Youtube単体の契約を解約したのに、結局広告が表示される。\"\n   \n2. **[@AThanh93081](https://x.com/AThanh93081/status/2061729457870971081)**: \"Đag chán này ai call show chéo hong.\"\n\n3. **[@Roman_sw09](https://x.com/Roman_sw09/status/2061729457505702120)**: \"The future of AI is built by those who take action, not those who watch from the sidelines.\"\n\n4. **[@foxtomb232](https://x.com/foxtomb232/status/2061729456373309826)**: \"looking to connect people on X if you're into building SaaS, vibe coding, AI tools, shipping in public.\"\n\n5. **[@jinamcapital](https://x.com/jinamcapital/status/2061729454960079345)**: \"Been on X for a while… and realized something: My feed needs more builders. I’m looking to connect with people who are shipping side projects, building startups in public, working on AI/ML.\"\n\nNếu bạn cần thêm thông tin hoặc chi tiết về một trong những tin tức hoặc tweet này, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "lookup",
+              "args": {
+                "query": "AI",
+                "topic": "news",
+                "timeframe": "day"
+              }
+            },
+            {
+              "name": "social_search",
+              "args": {
+                "query": "AI",
+                "search_type": "Latest"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "lookup",
+              "args": {
+                "query": "AI",
+                "topic": "news",
+                "timeframe": "day"
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "AI",
+                "topic": "news",
+                "timeframe": "day",
+                "items": [
+                  {
+                    "title": "AI expected to drive £18bn of UK digital ad spend by 2030 - Marketing Week",
+                    "url": "https://www.marketingweek.com/iab-uk-ai-ad-spend/",
+                    "source": "marketingweek.com",
+                    "summary": "# AI expected to drive £18bn of UK digital ad spend by 2030. IAB UK forecasts AI will drive one-third of UK digital ad spend by 2030 as advertisers adapt to changes in search, content and media buying. One-third (32%) of UK digital ad spend, equivalent to around £18bn, will be AI-driven by 2030, according to new forecasts from IAB UK. According to ‘The State of AI in Advertising: Charting the Shift from Automation to Autonomy, ‘ AI is expected to influence ad spend across four key areas– content creation, zero-click search, agentic trading and agentic commerce. To estimate the likely scale of change, IAB UK developed a series of ‘AI overlays’ that estimate the proportion of media spend by channel that is ‘AI-driven’, defined as a media buying and delivery decision made by an AI-powered algorithm. IAB UK forecasts most of the growth will come from the adoption of AI buying tools in search, such as Google’s AI Max and PMax; social, including Meta’s Advantage+; and display advertising through agentic programmatic buying.",
+                    "score": 0.80069196
+                  },
+                  {
+                    "title": "40% of executives thought AI could save up to 20%. It didn’t deliver. - PitchBook",
+                    "url": "https://pitchbook.com/news/articles/40-of-executives-thought-ai-could-save-up-to-20-it-didnt-deliver",
+                    "source": "pitchbook.com",
+                    "summary": "## The gap between AI spending and productivity gains “should be making executives uncomfortable,” a Bain report found. Corporates are beefing up their AI budgets but seeing lackluster productivity gains, according to the latest Bain & Company report. Bain’s Automation and AI Pathfinder Survey 2026, which had 951 respondents, found that 40% of the companies that tracked their spending recorded cost savings of less than 10% from their AI initiatives. Still, 90% of those surveyed whose AI investments underdelivered plan to increase their AI budgets next year. As compute and usage costs have risen dramatically, executives and shareholders are taking a closer look at the returns that those investments have brought so far. A PitchBook analysis of 186 AI-related questions on B2C earnings calls found that 90% were probing and investigative in tone, and that ROI and financial returns have overtaken product roadmaps as the dominant focus. Employees’ use of AI tools can range from coding assistants to AI-generated research to organizing unstructured databases.",
+                    "score": 0.2700389
+                  },
+                  {
+                    "title": "AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan - The Washington Post",
+                    "url": "https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/",
+                    "source": "washingtonpost.com",
+                    "summary": "AI & Tech Brief from WP Intelligence. # AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan. Plus, Anthropic files for a blockbuster initial public offering. Make us preferred on Google. Sign up here to get this newsletter in your inbox. * **Exclusive:** AI safety group Americans for Responsible Innovation rolls out a six-figure ad campaign this week attacking Rep. Lori Trahan (D-Massachusetts), arguing that she’s “taking the side” of AI oligarchs in her bipartisan legislative efforts. * The AI safety community doesn’t want to hand power of AI regulation to President Donald Trump’s administration now that states are passing more rigorous AI laws — and the California and New York attorneys general are challenging big AI companies. * Nvidia is rolling out a new “world model” simulator for robots and a new design platform for robot developers. In doing so, the company is running the same business playbook it did to become so dominant in the chip market.",
+                    "score": 0.8749346
+                  },
+                  {
+                    "title": "AI Savings Misses ‘Should Be Making Executives Uncomfortable,’ Bain Says - Insurance Journal",
+                    "url": "https://www.insurancejournal.com/news/national/2026/06/01/871951.htm",
+                    "source": "insurancejournal.com",
+                    "summary": "The missed targets “should be making executives uncomfortable,” especially since many of them are approving increased spending for artificial intelligence on the basis of expected savings, the consulting firm said in a report shared exclusively with Bloomberg News. While some companies are funding fresh investment in generative and agentic AI with realized savings, the largest share (44%) cited targeted savings among their top sources of funding for the next wave of outlays, according to the report. “Despite a decade of investments in data modernization running well into hundreds of billions of dollars globally, the No. 1 reason AI programs underperform is that companies cannot reliably get access to their own data,” Bain said. Its prescription: Instead of waiting to structure all of their data to make it ingestible by AI, companies should start with what’s available to feed into the models — and then use AI to help sort out how to structure the rest.",
+                    "score": 0.22715242
+                  },
+                  {
+                    "title": "New Report: The AI Rebuild of Travel - Skift",
+                    "url": "https://skift.com/insights/the-ai-rebuild-of-travel/",
+                    "source": "skift.com",
+                    "summary": "# New Report: The AI Rebuild of Travel. Travel technology is being rebuilt in real time as AI begins to shape how trips are discovered, booked, and managed. And systems built for websites and manual workflows are struggling to keep pace with a more connected, autonomous future. What once operated as a predictable digital journey is becoming an AI-mediated ecosystem powered by real-time data, interoperability, and increasingly intelligent systems. Skift Studio spoke with 10 senior technology, product, and digital leaders across airlines, hospitality companies, travel platforms, and technology providers to understand how the industry is preparing. One thing is clear: the next era of travel will be defined by infrastructure as much as interface. **Download the report to learn:**. * How AI assistants and agentic experiences are reshaping travel discovery and booking. * Why trust, governance, and identity are becoming central to AI-powered travel. * How airlines, hotels, and platforms are preparing for a more autonomous future.",
+                    "score": 0.20410421
+                  }
+                ]
+              }
+            },
+            {
+              "tool": "social_search",
+              "args": {
+                "query": "AI",
+                "search_type": "Latest"
+              },
+              "result": {
+                "tool": "search_tweets",
+                "query": "AI",
+                "search_type": "Latest",
+                "items": [
+                  {
+                    "title": "GeminiのAI ProでYoutube Premiumが追加されて、冗長ですって言われて、Youtube単体の契約を解約したのに、結局広告が表示される。",
+                    "summary": "GeminiのAI ProでYoutube Premiumが追加されて、冗長ですって言われて、Youtube単体の契約を解約したのに、結局広告が表示される。\n\"Lite\"だと一部広告は残るのね。\nまた、Premiumに登録する。",
+                    "url": "https://x.com/YNY_1985/status/2061729458403561680",
+                    "source": "@YNY_1985",
+                    "date": "Tue Jun 02 08:39:42 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 0,
+                      "views": null
+                    }
+                  },
+                  {
+                    "title": "Đag chán này ai call show chéo hong",
+                    "summary": "Đag chán này ai call show chéo hong",
+                    "url": "https://x.com/AThanh93081/status/2061729457870971081",
+                    "source": "@AThanh93081",
+                    "date": "Tue Jun 02 08:39:42 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 0,
+                      "views": null
+                    }
+                  },
+                  {
+                    "title": "@emma90410 @RAFA_AI The future of AI is built by those who take action, not those who watch from the sidelines",
+                    "summary": "@emma90410 @RAFA_AI The future of AI is built by those who take action, not those who watch from the sidelines",
+                    "url": "https://x.com/Roman_sw09/status/2061729457505702120",
+                    "source": "@Roman_sw09",
+                    "date": "Tue Jun 02 08:39:42 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 0,
+                      "views": null
+                    }
+                  },
+                  {
+                    "title": "looking to connect people on X  ",
+                    "summary": "looking to connect people on X  \n\nif you're into  \n- building SaaS \n- vibe coding \n- AI tools \n- shipping in public \n- figuring it out as you go  \n\nsay Hi or drop what you're working on  looking to follow active ones 👋 https://t.co/8ao4Zwepsp",
+                    "url": "https://x.com/foxtomb232/status/2061729456373309826",
+                    "source": "@foxtomb232",
+                    "date": "Tue Jun 02 08:39:42 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 0,
+                      "views": null
+                    }
+                  },
+                  {
+                    "title": "Been on X for a while… and realized something:",
+                    "summary": "Been on X for a while… and realized something:\n\nMy feed needs more builders.\n\nI’m looking to connect with people who are:\nshipping side projects \nbuilding startups in public\nworking on AI/ML, SaaS, or dev tools\nwriting code + sharing the journey\n\nBasically  people who are doing, not just consuming.\n\nIf thats you, drop a hi 👇\n\nor tell me what you’re currently building.\n\nLet’s grow together.\n\n#buildinpublic #developers #startups #AI #SaaS",
+                    "url": "https://x.com/jinamcapital/status/2061729454960079345",
+                    "source": "@jinamcapital",
+                    "date": "Tue Jun 02 08:39:41 +0000 2026",
+                    "metrics": {
+                      "favorites": 0,
+                      "retweets": 0,
+                      "views": null
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Dưới đây là tin tức về AI hôm nay và những gì mọi người đang nói trên Twitter:\n\n### Tin tức về AI\n1. **[AI expected to drive £18bn of UK digital ad spend by 2030 - Marketing Week](https://www.marketingweek.com/iab-uk-ai-ad-spend/)**\n   - Tóm tắt: Dự báo AI sẽ thúc đẩy 18 tỷ bảng Anh chi tiêu quảng cáo kỹ thuật số tại Vương quốc Anh vào năm 2030. IAB UK cho biết AI sẽ chiếm một phần ba chi tiêu quảng cáo kỹ thuật số của Vương quốc Anh.\n   \n2. **[40% of executives thought AI could save up to 20%. It didn’t deliver. - PitchBook](https://pitchbook.com/news/articles/40-of-executives-thought-ai-could-save-up-to-20-it-didnt-deliver)**\n   - Tóm tắt: Một báo cáo từ Bain cho thấy khoảng cách giữa chi tiêu cho AI và lợi ích năng suất đang khiến các giám đốc điều hành lo lắng. 40% công ty ghi nhận tiết kiệm chi phí dưới 10% từ các sáng kiến AI.\n\n3. **[AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan - The Washington Post](https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/)**\n   - Tóm tắt: Một chiến dịch quảng cáo AI đã chỉ trích đại diện Lori Trahan, cho rằng bà đang đứng về phía các \"oligarch\" AI trong các nỗ lực lập pháp của mình.\n\n4. **[AI Savings Misses ‘Should Be Making Executives Uncomfortable,’ Bain Says - Insurance Journal](https://www.insurancejournal.com/news/national/2026/06/01/871951.htm)**\n   - Tóm tắt: Báo cáo từ Bain cho biết các mục tiêu tiết kiệm từ AI không đạt được có thể khiến các giám đốc điều hành cảm thấy không thoải mái, đặc biệt khi họ đang phê duyệt tăng chi tiêu cho AI.\n\n5. **[New Report: The AI Rebuild of Travel - Skift](https://skift.com/insights/the-ai-rebuild-of-travel/)**\n   - Tóm tắt: Công nghệ du lịch đang được xây dựng lại khi AI bắt đầu định hình cách thức khám phá, đặt chỗ và quản lý chuyến đi.\n\n### Những gì mọi người đang nói về AI trên Twitter\n1. **[@YNY_1985](https://x.com/YNY_1985/status/2061729458403561680)**: \"GeminiのAI ProでYoutube Premiumが追加されて、冗長ですって言われて、Youtube単体の契約を解約したのに、結局広告が表示される。\"\n   \n2. **[@AThanh93081](https://x.com/AThanh93081/status/2061729457870971081)**: \"Đag chán này ai call show chéo hong.\"\n\n3. **[@Roman_sw09](https://x.com/Roman_sw09/status/2061729457505702120)**: \"The future of AI is built by those who take action, not those who watch from the sidelines.\"\n\n4. **[@foxtomb232](https://x.com/foxtomb232/status/2061729456373309826)**: \"looking to connect people on X if you're into building SaaS, vibe coding, AI tools, shipping in public.\"\n\n5. **[@jinamcapital](https://x.com/jinamcapital/status/2061729454960079345)**: \"Been on X for a while… and realized something: My feed needs more builders. I’m looking to connect with people who are shipping side projects, building startups in public, working on AI/ML.\"\n\nNếu bạn cần thêm thông tin hoặc chi tiết về một trong những tin tức hoặc tweet này, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "AI",
+            "topic": "news",
+            "timeframe": "day"
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "AI",
+            "topic": "news",
+            "timeframe": "day",
+            "items": [
+              {
+                "title": "AI expected to drive £18bn of UK digital ad spend by 2030 - Marketing Week",
+                "url": "https://www.marketingweek.com/iab-uk-ai-ad-spend/",
+                "source": "marketingweek.com",
+                "summary": "# AI expected to drive £18bn of UK digital ad spend by 2030. IAB UK forecasts AI will drive one-third of UK digital ad spend by 2030 as advertisers adapt to changes in search, content and media buying. One-third (32%) of UK digital ad spend, equivalent to around £18bn, will be AI-driven by 2030, according to new forecasts from IAB UK. According to ‘The State of AI in Advertising: Charting the Shift from Automation to Autonomy, ‘ AI is expected to influence ad spend across four key areas– content creation, zero-click search, agentic trading and agentic commerce. To estimate the likely scale of change, IAB UK developed a series of ‘AI overlays’ that estimate the proportion of media spend by channel that is ‘AI-driven’, defined as a media buying and delivery decision made by an AI-powered algorithm. IAB UK forecasts most of the growth will come from the adoption of AI buying tools in search, such as Google’s AI Max and PMax; social, including Meta’s Advantage+; and display advertising through agentic programmatic buying.",
+                "score": 0.80069196
+              },
+              {
+                "title": "40% of executives thought AI could save up to 20%. It didn’t deliver. - PitchBook",
+                "url": "https://pitchbook.com/news/articles/40-of-executives-thought-ai-could-save-up-to-20-it-didnt-deliver",
+                "source": "pitchbook.com",
+                "summary": "## The gap between AI spending and productivity gains “should be making executives uncomfortable,” a Bain report found. Corporates are beefing up their AI budgets but seeing lackluster productivity gains, according to the latest Bain & Company report. Bain’s Automation and AI Pathfinder Survey 2026, which had 951 respondents, found that 40% of the companies that tracked their spending recorded cost savings of less than 10% from their AI initiatives. Still, 90% of those surveyed whose AI investments underdelivered plan to increase their AI budgets next year. As compute and usage costs have risen dramatically, executives and shareholders are taking a closer look at the returns that those investments have brought so far. A PitchBook analysis of 186 AI-related questions on B2C earnings calls found that 90% were probing and investigative in tone, and that ROI and financial returns have overtaken product roadmaps as the dominant focus. Employees’ use of AI tools can range from coding assistants to AI-generated research to organizing unstructured databases.",
+                "score": 0.2700389
+              },
+              {
+                "title": "AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan - The Washington Post",
+                "url": "https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/01/ai-tech-brief-exclusive-ai-ad-campaigns-slam-trahan/",
+                "source": "washingtonpost.com",
+                "summary": "AI & Tech Brief from WP Intelligence. # AI & Tech Brief: Exclusive | AI ad campaigns slam Trahan. Plus, Anthropic files for a blockbuster initial public offering. Make us preferred on Google. Sign up here to get this newsletter in your inbox. * **Exclusive:** AI safety group Americans for Responsible Innovation rolls out a six-figure ad campaign this week attacking Rep. Lori Trahan (D-Massachusetts), arguing that she’s “taking the side” of AI oligarchs in her bipartisan legislative efforts. * The AI safety community doesn’t want to hand power of AI regulation to President Donald Trump’s administration now that states are passing more rigorous AI laws — and the California and New York attorneys general are challenging big AI companies. * Nvidia is rolling out a new “world model” simulator for robots and a new design platform for robot developers. In doing so, the company is running the same business playbook it did to become so dominant in the chip market.",
+                "score": 0.8749346
+              },
+              {
+                "title": "AI Savings Misses ‘Should Be Making Executives Uncomfortable,’ Bain Says - Insurance Journal",
+                "url": "https://www.insurancejournal.com/news/national/2026/06/01/871951.htm",
+                "source": "insurancejournal.com",
+                "summary": "The missed targets “should be making executives uncomfortable,” especially since many of them are approving increased spending for artificial intelligence on the basis of expected savings, the consulting firm said in a report shared exclusively with Bloomberg News. While some companies are funding fresh investment in generative and agentic AI with realized savings, the largest share (44%) cited targeted savings among their top sources of funding for the next wave of outlays, according to the report. “Despite a decade of investments in data modernization running well into hundreds of billions of dollars globally, the No. 1 reason AI programs underperform is that companies cannot reliably get access to their own data,” Bain said. Its prescription: Instead of waiting to structure all of their data to make it ingestible by AI, companies should start with what’s available to feed into the models — and then use AI to help sort out how to structure the rest.",
+                "score": 0.22715242
+              },
+              {
+                "title": "New Report: The AI Rebuild of Travel - Skift",
+                "url": "https://skift.com/insights/the-ai-rebuild-of-travel/",
+                "source": "skift.com",
+                "summary": "# New Report: The AI Rebuild of Travel. Travel technology is being rebuilt in real time as AI begins to shape how trips are discovered, booked, and managed. And systems built for websites and manual workflows are struggling to keep pace with a more connected, autonomous future. What once operated as a predictable digital journey is becoming an AI-mediated ecosystem powered by real-time data, interoperability, and increasingly intelligent systems. Skift Studio spoke with 10 senior technology, product, and digital leaders across airlines, hospitality companies, travel platforms, and technology providers to understand how the industry is preparing. One thing is clear: the next era of travel will be defined by infrastructure as much as interface. **Download the report to learn:**. * How AI assistants and agentic experiences are reshaping travel discovery and booking. * Why trust, governance, and identity are becoming central to AI-powered travel. * How airlines, hotels, and platforms are preparing for a more autonomous future.",
+                "score": 0.20410421
+              }
+            ]
+          }
+        },
+        {
+          "tool": "social_search",
+          "args": {
+            "query": "AI",
+            "search_type": "Latest"
+          },
+          "result": {
+            "tool": "search_tweets",
+            "query": "AI",
+            "search_type": "Latest",
+            "items": [
+              {
+                "title": "GeminiのAI ProでYoutube Premiumが追加されて、冗長ですって言われて、Youtube単体の契約を解約したのに、結局広告が表示される。",
+                "summary": "GeminiのAI ProでYoutube Premiumが追加されて、冗長ですって言われて、Youtube単体の契約を解約したのに、結局広告が表示される。\n\"Lite\"だと一部広告は残るのね。\nまた、Premiumに登録する。",
+                "url": "https://x.com/YNY_1985/status/2061729458403561680",
+                "source": "@YNY_1985",
+                "date": "Tue Jun 02 08:39:42 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              },
+              {
+                "title": "Đag chán này ai call show chéo hong",
+                "summary": "Đag chán này ai call show chéo hong",
+                "url": "https://x.com/AThanh93081/status/2061729457870971081",
+                "source": "@AThanh93081",
+                "date": "Tue Jun 02 08:39:42 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              },
+              {
+                "title": "@emma90410 @RAFA_AI The future of AI is built by those who take action, not those who watch from the sidelines",
+                "summary": "@emma90410 @RAFA_AI The future of AI is built by those who take action, not those who watch from the sidelines",
+                "url": "https://x.com/Roman_sw09/status/2061729457505702120",
+                "source": "@Roman_sw09",
+                "date": "Tue Jun 02 08:39:42 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              },
+              {
+                "title": "looking to connect people on X  ",
+                "summary": "looking to connect people on X  \n\nif you're into  \n- building SaaS \n- vibe coding \n- AI tools \n- shipping in public \n- figuring it out as you go  \n\nsay Hi or drop what you're working on  looking to follow active ones 👋 https://t.co/8ao4Zwepsp",
+                "url": "https://x.com/foxtomb232/status/2061729456373309826",
+                "source": "@foxtomb232",
+                "date": "Tue Jun 02 08:39:42 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              },
+              {
+                "title": "Been on X for a while… and realized something:",
+                "summary": "Been on X for a while… and realized something:\n\nMy feed needs more builders.\n\nI’m looking to connect with people who are:\nshipping side projects \nbuilding startups in public\nworking on AI/ML, SaaS, or dev tools\nwriting code + sharing the journey\n\nBasically  people who are doing, not just consuming.\n\nIf thats you, drop a hi 👇\n\nor tell me what you’re currently building.\n\nLet’s grow together.\n\n#buildinpublic #developers #startups #AI #SaaS",
+                "url": "https://x.com/jinamcapital/status/2061729454960079345",
+                "source": "@jinamcapital",
+                "date": "Tue Jun 02 08:39:41 +0000 2026",
+                "metrics": {
+                  "favorites": 0,
+                  "retweets": 0,
+                  "views": null
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T15:39:59"
+    }
+  ]
+}
