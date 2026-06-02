@@ -5,11 +5,12 @@ from typing import Any
 
 import requests
 
-from tools._shared import TIMEOUT, domain, err
+from tools._shared import TIMEOUT, domain, err, normalize_url
 
 
 def read_url(url: str = "") -> dict[str, Any]:
     try:
+        url = normalize_url(url)
         key = os.getenv("FIRECRAWL_API_KEY")
         if not key:
             raise RuntimeError("Missing FIRECRAWL_API_KEY env var")

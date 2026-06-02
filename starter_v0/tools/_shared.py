@@ -22,6 +22,38 @@ def domain(url: str) -> str:
         return ""
 
 
+def clean_text(value: Any) -> str:
+    return " ".join(str(value or "").strip().split())
+
+
+def clamp_int(value: Any, *, default: int, minimum: int = 1, maximum: int = 20) -> int:
+    try:
+        number = int(value)
+    except (TypeError, ValueError):
+        number = default
+    return max(minimum, min(number, maximum))
+
+
+def require_text(value: Any, field: str) -> str:
+    text = clean_text(value)
+    if not text:
+        raise ValueError(f"Missing required field: {field}")
+    return text
+
+
+def normalize_url(url: str) -> str:
+    cleaned = clean_text(url)
+    if not cleaned:
+        raise ValueError("Missing required field: url")
+    parsed = urlparse(cleaned)
+    if not parsed.scheme:
+        cleaned = "https://" + cleaned
+        parsed = urlparse(cleaned)
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        raise ValueError(f"Invalid URL: {url}")
+    return cleaned
+
+
 def fold_text(text: str) -> str:
     decomposed = unicodedata.normalize("NFD", text.lower())
     return "".join(ch for ch in decomposed if unicodedata.category(ch) != "Mn")

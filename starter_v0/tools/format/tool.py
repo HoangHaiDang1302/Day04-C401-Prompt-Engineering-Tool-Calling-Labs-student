@@ -20,6 +20,12 @@ def _bullet(item: dict[str, Any]) -> str:
 
 def render_digest(items: list[dict[str, Any]] | None = None, template: str = "sections", headline: str = "") -> dict[str, Any]:
     items = items or []
+    if not isinstance(items, list):
+        items = []
+    template = template if template in {"brief", "sections", "bullets", "thread", "daily_ai_vn"} else "sections"
+    headline = str(headline or "").strip()
+    if not items:
+        return {"tool": "render_digest", "template": template, "markdown": headline or "No items to format.", "item_count": 0}
     if template == "brief":
         markdown = (f"**{headline}**\n\n" if headline else "") + "\n".join(_bullet(item) for item in items[:5])
     elif template == "bullets":

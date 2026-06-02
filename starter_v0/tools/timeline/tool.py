@@ -5,7 +5,7 @@ from typing import Any
 
 import requests
 
-from tools._shared import TIMEOUT, err
+from tools._shared import TIMEOUT, clamp_int, err, require_text
 
 
 def _twitter_get(path: str, params: dict[str, Any]) -> dict[str, Any]:
@@ -45,8 +45,10 @@ def _tweets_from(data: dict[str, Any], limit: int) -> list[dict[str, Any]]:
 
 def get_user_tweets(screenname: str = "", limit: int = 5) -> dict[str, Any]:
     try:
+        screenname = require_text(screenname, "screenname").lstrip("@")
+        limit = clamp_int(limit, default=5, minimum=1, maximum=20)
         data = _twitter_get("/timeline.php", {"screenname": screenname})
-        return {"tool": "get_user_tweets", "screenname": screenname, "items": _tweets_from(data, limit)}
+        return {"tool": "get_user_tweets", "screenname": screenname, "limit": limit, "items": _tweets_from(data, limit)}
     except Exception as exc:
         return err("get_user_tweets", exc)
 
